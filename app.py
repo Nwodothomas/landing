@@ -9,9 +9,14 @@ def index():
 '''@app.route('/contact')
 def contact():
     return render_template('contact.html')
+'''
+
+@app.route('/docs/doc.html')
+def view_documentation():
+    return render_template('docs/doc.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
-'''
+
 
 
