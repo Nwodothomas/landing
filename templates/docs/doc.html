@@ -11,14 +11,16 @@
   <!-- Navigation section -->
   <nav>
     <ul>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Documentation</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#" id="signin-link">Sign In</a></li>
+      <li><a href="{{ url_for('index') }}#features">Features</a></li>
+      <li><a href="{{ url_for('index') }}#about">About</a></li>
+      <li><a href="{{ url_for('index') }}">Documentation</a></li>
+      <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+      <li><a href="{{ url_for('index') }}#signin">Sign In</a></li>
+
+      
     </ul>
   </nav>
-
+  
   <header>
     <h1>Payment API Documentation</h1>
   </header>
