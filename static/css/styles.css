@@ -407,56 +407,22 @@ footer {
     font-size: 14px;
   }
 }
-
-/* Create a container for the banner */
-.banner-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 40%;
-  overflow: hidden;
-}
-
-/* Apply animation styles to the banner images */
-.banner-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  height: 40%;
-  opacity: 0;
-  animation-name: bannerAnimation;
-  animation-duration: 8s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-/* Define animation delays for each banner image */
-.banner-image:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.banner-image:nth-child(2) {
-  animation-delay: 8s;
-}
-
-/* Define the keyframes for the banner animation */
+/* CSS Animation */
 @keyframes bannerAnimation {
   0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
+    transform: scale(1);
   }
   50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
+    transform: scale(1.1);
   }
   100% {
-    opacity: 0;
+    transform: scale(1);
   }
 }
 
+/* Apply Animation to Banner */
+.banner-image {
+  animation-name: bannerAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
