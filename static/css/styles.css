@@ -410,11 +410,12 @@ footer {
 
 /* Create a container for the banner */
 .banner-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 50%;
   height: 80%;
   overflow: hidden;
-  float: right;
 }
 
 /* Apply animation styles to the banner images */
@@ -423,7 +424,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0;
   animation-name: bannerAnimation;
   animation-duration: 8s; /* Adjust the duration based on the number of images */
@@ -446,4 +447,23 @@ footer {
 
 .banner-image:nth-child(4) {
   animation-delay: 24s;
+}
+
+/* Define the keyframes for the banner animation */
+@keyframes bannerAnimation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
