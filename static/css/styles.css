@@ -416,8 +416,8 @@ footer {
   25% {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -428,8 +428,8 @@ footer {
 .banner-container {
   display: flex;
   justify-content: flex-end;
-  width: 20%; /* Adjust the width as needed */
-  height: 40%;
+  width: 50%; /* Adjust the width as needed */
+  height: 60%;
   overflow: hidden;
   margin-left: auto;
 }
@@ -437,8 +437,8 @@ footer {
 /* Apply animation styles to each banner image */
 .banner-image {
   flex-shrink: 0;
-  width: 40%;
-  height: 20%;
+  width: 50%;
+  height: 60%;
   opacity: 0;
   animation-name: bannerAnimation;
   animation-duration: 12s;
@@ -457,4 +457,8 @@ footer {
 
 .banner-image:nth-child(3) {
   animation-delay: 12s;
+}
+
+.banner-image:nth-child(4) {
+  animation-delay: 18s;
 }
