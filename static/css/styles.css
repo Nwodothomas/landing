@@ -424,9 +424,10 @@ footer {
 /* Create a container for the banner */
 .banner-container {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 100%;
   overflow: hidden;
+  float: right;
 }
 
 /* Apply animation styles to the banner images */
@@ -459,3 +460,4 @@ footer {
 .banner-image:nth-child(4) {
   animation-delay: 48s;
 }
+
