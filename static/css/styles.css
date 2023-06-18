@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  background-color: #ffffff;
+  background-color: #ffffff; /* plain white background */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -21,10 +21,16 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0099cc;
+  background-color: #0099cc; /* blue */
   padding: 20px;
-  color: #ffffff;
-  z-index: 999;
+  color: #ffffff; /* white */
+  z-index: 999; /* ensure the header appears on top of other elements */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .logo img {
@@ -43,23 +49,23 @@ header {
 }
 
 nav {
-  flex-grow: 1;
+  flex-grow: 1; /* Allow the navigation to fill the remaining space */
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Display the list items in a row */
+  justify-content: space-between; /* Align the list items with space between them */
 }
 
 nav ul.left-links {
-  justify-content: flex-start;
+  justify-content: flex-start; /* Align the left links to the left */
 }
 
 nav ul.right-links {
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align the right links to the right */
 }
 
 nav ul li {
@@ -67,7 +73,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-  margin-right: 30px;
+  margin-right: 30px; /* Remove margin for the last link */
 }
 
 nav ul li a {
@@ -82,8 +88,8 @@ nav {
 
 /* Footer Styles */
 footer {
-  background-color: #0099cc;
-  color: #ffffff;
+  background-color: #0099cc; /* blue */
+  color: #ffffff; /* white */
   padding: 20px;
   text-align: center;
 }
@@ -117,7 +123,7 @@ footer {
 
 .flash-messages li {
   margin-bottom: 10px;
-  color: #0099cc;
+  color: #0099cc; /* blue */
   font-weight: bold;
 }
 
@@ -130,6 +136,14 @@ footer {
 footer {
   margin-top: auto;
 }
+/*
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  background-color: #f8f9fa;
+}
+*/
 
 /* Styles specific to index.html */
 /* Add your index specific styles here */
@@ -137,7 +151,7 @@ footer {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
-  background-image: url('static/images/home.png');
+  background-image: url('static/images/home.png'); /* Replace 'your-image.jpg' with the path to your desired image */
   background-size: cover;
   background-position: center;
 }
@@ -209,7 +223,6 @@ footer {
   color: #0099cc;
   text-decoration: none;
 }
-
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -223,6 +236,7 @@ footer {
 .btn:hover {
   background-color: #0077b3;
 }
+
 
 #video {
   background-color: #ffffff;
@@ -331,7 +345,7 @@ footer {
   #features h2 {
     font-size: 20px;
   }
-
+  
   #features div {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
@@ -393,7 +407,6 @@ footer {
     font-size: 14px;
   }
 }
-
 /* CSS Animation */
 @keyframes bannerAnimation {
   0% {
