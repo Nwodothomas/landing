@@ -413,10 +413,10 @@ footer {
   0% {
     opacity: 0;
   }
-  25% {
+  20% {
     opacity: 1;
   }
-  75% {
+  80% {
     opacity: 1;
   }
   100% {
@@ -440,8 +440,9 @@ footer {
   width: 100%;
   height: 100%;
   opacity: 0;
+  position: absolute;
   animation-name: bannerAnimation;
-  animation-duration: 12s;
+  animation-duration: 16s; /* Adjust the duration based on the number of images */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -452,13 +453,13 @@ footer {
 }
 
 .banner-image:nth-child(2) {
-  animation-delay: 6s;
+  animation-delay: 16s;
 }
 
 .banner-image:nth-child(3) {
-  animation-delay: 12s;
+  animation-delay: 32s;
 }
 
 .banner-image:nth-child(4) {
-  animation-delay: 18s;
+  animation-delay: 48s;
 }
