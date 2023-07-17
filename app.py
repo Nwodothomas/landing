@@ -6,9 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/docs/')
+@app.route('/doc/')
 def view_documentation():
-    return render_template('docs/doc.html')
+    return render_template('doc/doc.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
