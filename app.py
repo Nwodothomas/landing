@@ -1,14 +1,18 @@
-from flask import Flask, render_template
+from flask import Flask, render_template_string
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    with open('index.html', 'r') as file:
+        content = file.read()
+    return render_template_string(content)
 
-@app.route('/doc/')
+@app.route('/docs/')
 def view_documentation():
-    return render_template('doc/doc.html')
+    with open('docs/doc.html', 'r') as file:
+        content = file.read()
+    return render_template_string(content)
 
 if __name__ == '__main__':
     app.run(debug=True)
